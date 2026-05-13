@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "buckets" {
-  count  = 1000
+  count  = 5
   bucket = "mohamed-ayman-test-${count.index + 1}"
 
   tags = {
